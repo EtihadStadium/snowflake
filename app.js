@@ -2,8 +2,10 @@ const body = document.querySelector("body");
 function makeSnowflake() {
     if (!body) return;
     const snowflake = document.createElement("div");
+    const delay = Math.random() * 10;
     snowflake.classList.add("snowflake");
     snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+    snowflake.style.animationDelay = `${delay}s`;
     body.appendChild(snowflake);
 }
 makeSnowflake();
