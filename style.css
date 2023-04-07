@@ -8,7 +8,6 @@ body {
     height: 8px;
     border-radius: 50%;
     background-color: white;
-    animation: fall 10s linear;
 }
 @keyframes fall {
     from {
